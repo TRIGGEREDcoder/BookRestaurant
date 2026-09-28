@@ -2,14 +2,28 @@
     <sys_pd_process_definition action="INSERT_OR_UPDATE">
         <access>public</access>
         <active>true</active>
+        <allow_as_nested>false</allow_as_nested>
+        <copied_from/>
+        <copied_from_label/>
+        <data_retention_period_override>6_week</data_retention_period_override>
         <description/>
         <designer_state>{"creatorStudioRecordProducerId":"fd6c599f97bc52103b4cb47de053af4f"}</designer_state>
         <engine_major_version/>
+        <evaluate_variant_children_after/>
+        <execution_type>record_driven</execution_type>
         <label>Restaurant booking</label>
+        <launcher_description/>
+        <launcher_inputs/>
+        <launcher_record_form_view/>
+        <launcher_show_record_form>false</launcher_show_record_form>
+        <launcher_template_fields/>
+        <launcher_title/>
         <name>restaurant_booking</name>
+        <now_assist_kb/>
         <now_assist_prompt/>
         <permission/>
         <process_type display_value="Creator Studio Automation">a487710eff0f3110893effffffffff4d</process_type>
+        <public_access>false</public_access>
         <restartable>RESTARTABLE_FALSE</restartable>
         <run_on_pad_engine>false</run_on_pad_engine>
         <run_strategy>run_once</run_strategy>
@@ -34,7 +48,7 @@
         <sys_updated_on>2025-11-17 12:48:48</sys_updated_on>
         <view_type>DIAGRAM</view_type>
     </sys_pd_process_definition>
-    <sys_translated_text action="delete_multiple" query="documentkey=a9e73396e4f972c6f1a1d1567bf3f8c1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a9e73396e4f972c6f1a1d1567bf3f8c1"/>
     <sys_pd_process_input action="delete_multiple" query="model=a9e73396e4f972c6f1a1d1567bf3f8c1"/>
     <sys_pd_process_output action="delete_multiple" query="model=a9e73396e4f972c6f1a1d1567bf3f8c1"/>
     <sys_pd_lane action="delete_multiple" query="process_definition=a9e73396e4f972c6f1a1d1567bf3f8c1^sys_idNOT INf30a3b4428e66597a35eaf3e32c032a8"/>
@@ -63,17 +77,24 @@
         <sys_updated_on>2024-09-27 16:48:24</sys_updated_on>
         <visible_rule/>
     </sys_pd_lane>
-    <sys_translated_text action="delete_multiple" query="documentkey=f30a3b4428e66597a35eaf3e32c032a8"/>
     <sys_variable_value action="delete_multiple" query="document_key=f30a3b4428e66597a35eaf3e32c032a8"/>
     <sys_pd_timer_attributes action="delete_multiple" query="process_definition=a9e73396e4f972c6f1a1d1567bf3f8c1"/>
     <sys_pd_activity action="delete_multiple" query="process_definition=a9e73396e4f972c6f1a1d1567bf3f8c1^sys_idNOT IN51c24b051c9a8051c93e051c189051c8,1ab44ff01ab47f501ab44dc01ab490f0,65209e0652520065278e06523e506521,33dafe0033da384033da679033da3360,7e435307e4b2907e43a607e488207e41"/>
     <sys_pd_activity action="INSERT_OR_UPDATE">
         <active>true</active>
         <activity_definition display_value="Request approval">1e1c6cb0c34121107b79e548fa40dd09</activity_definition>
+        <ai_agent_execution_mode>off</ai_agent_execution_mode>
+        <ai_agent_obj_additional_detail/>
+        <ai_agent_objective/>
+        <ai_agent_run_as>playbook_user</ai_agent_run_as>
+        <ai_agent_run_with_roles/>
+        <ai_agent_user/>
         <condition_to_run/>
+        <conversational_agents/>
         <derivative_order/>
         <derivative_parent/>
         <description/>
+        <enable_ai_agent>false</enable_ai_agent>
         <inputs/>
         <inputs/>
         <label>Confirm booking request</label>
@@ -93,9 +114,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-27 16:51:57</sys_created_on>
         <sys_id>51c24b051c9a8051c93e051c189051c8</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-27 16:53:24</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-05 10:03:02</sys_updated_on>
         <type_vals/>
         <type_vals/>
         <variant/>
@@ -700,7 +721,6 @@
         <table>var__m_sys_pd_activity_type_prop_fdbeceb95b61001070e4492c11f91a28</table>
         <value/>
     </sys_element_mapping>
-    <sys_translated_text action="delete_multiple" query="documentkey=51c24b051c9a8051c93e051c189051c8"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_6dc41d73c37021107b79e548fa40dda1^id=51c24b051c9a8051c93e051c189051c8"/>
     <sys_element_mapping action="delete_multiple" query="id=51c24b051c9a8051c93e051c189051c8"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -979,13 +999,22 @@
         <table>var__m_sys_pd_activity_type_prop_fdbeceb95b61001070e4492c11f91a28</table>
         <value/>
     </sys_element_mapping>
+    <sys_pd_activity_action_override action="delete_multiple" query="activity=51c24b051c9a8051c93e051c189051c8"/>
     <sys_pd_activity action="INSERT_OR_UPDATE">
         <active>true</active>
         <activity_definition display_value="Decision">226ed8f6c7ad5110bfbaf89f51c260b1</activity_definition>
+        <ai_agent_execution_mode>off</ai_agent_execution_mode>
+        <ai_agent_obj_additional_detail/>
+        <ai_agent_objective/>
+        <ai_agent_run_as>playbook_user</ai_agent_run_as>
+        <ai_agent_run_with_roles/>
+        <ai_agent_user/>
         <condition_to_run/>
+        <conversational_agents/>
         <derivative_order/>
         <derivative_parent/>
         <description/>
+        <enable_ai_agent>false</enable_ai_agent>
         <inputs/>
         <label>Confirmed?</label>
         <lane display_value="Fulfillment steps">f30a3b4428e66597a35eaf3e32c032a8</lane>
@@ -1004,9 +1033,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-27 16:53:31</sys_created_on>
         <sys_id>1ab44ff01ab47f501ab44dc01ab490f0</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-27 16:57:08</sys_updated_on>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-05 10:03:02</sys_updated_on>
         <type_vals/>
         <variant/>
     </sys_pd_activity>
@@ -1068,15 +1097,23 @@
         <variable display_value="Branches">1dc0af0bc7311110bfbaf89f51c26029</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_input_401bd436c7ad5110bfbaf89f51c260be^id=1ab44ff01ab47f501ab44dc01ab490f0"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=1ab44ff01ab47f501ab44dc01ab490f0"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_401bd436c7ad5110bfbaf89f51c260be^id=1ab44ff01ab47f501ab44dc01ab490f0"/>
+    <sys_pd_activity_action_override action="delete_multiple" query="activity=1ab44ff01ab47f501ab44dc01ab490f0"/>
     <sys_pd_activity action="INSERT_OR_UPDATE">
         <active>true</active>
         <activity_definition display_value="Send an email">b0ca51efeb65021041417bd6c1522899</activity_definition>
+        <ai_agent_execution_mode>off</ai_agent_execution_mode>
+        <ai_agent_obj_additional_detail/>
+        <ai_agent_objective/>
+        <ai_agent_run_as>playbook_user</ai_agent_run_as>
+        <ai_agent_run_with_roles/>
+        <ai_agent_user/>
         <condition_to_run/>
+        <conversational_agents/>
         <derivative_order/>
         <derivative_parent/>
         <description/>
+        <enable_ai_agent>false</enable_ai_agent>
         <inputs/>
         <inputs/>
         <label>Booking Rejection</label>
@@ -1096,9 +1133,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-27 17:04:47</sys_created_on>
         <sys_id>65209e0652520065278e06523e506521</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-27 17:07:31</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-05 10:03:02</sys_updated_on>
         <type_vals/>
         <type_vals/>
         <variant/>
@@ -1835,7 +1872,6 @@
         <table>var__m_sys_hub_flow_input_a8c372cdebf9021041417bd6c1522856</table>
         <value>{{pd.inputRecord.sys_created_by}}</value>
     </sys_element_mapping>
-    <sys_translated_text action="delete_multiple" query="documentkey=65209e0652520065278e06523e506521"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_a8c372cdebf9021041417bd6c1522856^id=65209e0652520065278e06523e506521"/>
     <sys_element_mapping action="delete_multiple" query="id=65209e0652520065278e06523e506521"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -2162,13 +2198,22 @@
         <table>var__m_sys_hub_flow_input_a8c372cdebf9021041417bd6c1522856</table>
         <value>{{pd.inputRecord.sys_created_by}}</value>
     </sys_element_mapping>
+    <sys_pd_activity_action_override action="delete_multiple" query="activity=65209e0652520065278e06523e506521"/>
     <sys_pd_activity action="INSERT_OR_UPDATE">
         <active>true</active>
         <activity_definition display_value="Create task">410be4af534961106511ddeeff7b1254</activity_definition>
+        <ai_agent_execution_mode>off</ai_agent_execution_mode>
+        <ai_agent_obj_additional_detail/>
+        <ai_agent_objective/>
+        <ai_agent_run_as>playbook_user</ai_agent_run_as>
+        <ai_agent_run_with_roles/>
+        <ai_agent_user/>
         <condition_to_run/>
+        <conversational_agents/>
         <derivative_order/>
         <derivative_parent/>
         <description/>
+        <enable_ai_agent>false</enable_ai_agent>
         <inputs/>
         <inputs/>
         <label>Contact User and Reschedule booking</label>
@@ -2188,9 +2233,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-27 17:07:37</sys_created_on>
         <sys_id>33dafe0033da384033da679033da3360</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-27 17:08:33</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-05 10:03:02</sys_updated_on>
         <type_vals/>
         <type_vals/>
         <variant/>
@@ -2979,7 +3024,6 @@
         <table>var__m_sys_hub_flow_input_3dda6c6f534961106511ddeeff7b12ff</table>
         <value/>
     </sys_element_mapping>
-    <sys_translated_text action="delete_multiple" query="documentkey=33dafe0033da384033da679033da3360"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_3dda6c6f534961106511ddeeff7b12ff^id=33dafe0033da384033da679033da3360"/>
     <sys_element_mapping action="delete_multiple" query="id=33dafe0033da384033da679033da3360"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -3330,13 +3374,22 @@
         <table>var__m_sys_hub_flow_input_3dda6c6f534961106511ddeeff7b12ff</table>
         <value/>
     </sys_element_mapping>
+    <sys_pd_activity_action_override action="delete_multiple" query="activity=33dafe0033da384033da679033da3360"/>
     <sys_pd_activity action="INSERT_OR_UPDATE">
         <active>true</active>
         <activity_definition display_value="Send an email">b0ca51efeb65021041417bd6c1522899</activity_definition>
+        <ai_agent_execution_mode>off</ai_agent_execution_mode>
+        <ai_agent_obj_additional_detail/>
+        <ai_agent_objective/>
+        <ai_agent_run_as>playbook_user</ai_agent_run_as>
+        <ai_agent_run_with_roles/>
+        <ai_agent_user/>
         <condition_to_run/>
+        <conversational_agents/>
         <derivative_order/>
         <derivative_parent/>
         <description/>
+        <enable_ai_agent>false</enable_ai_agent>
         <inputs/>
         <inputs/>
         <label>Booking Confirmation</label>
@@ -3356,9 +3409,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-27 16:57:26</sys_created_on>
         <sys_id>7e435307e4b2907e43a607e488207e41</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-27 17:07:37</sys_updated_on>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-05 10:03:02</sys_updated_on>
         <type_vals/>
         <type_vals/>
         <variant/>
@@ -4095,7 +4148,6 @@
         <table>var__m_sys_hub_flow_input_a8c372cdebf9021041417bd6c1522856</table>
         <value>{{pd.inputRecord.sys_created_by}}</value>
     </sys_element_mapping>
-    <sys_translated_text action="delete_multiple" query="documentkey=7e435307e4b2907e43a607e488207e41"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_a8c372cdebf9021041417bd6c1522856^id=7e435307e4b2907e43a607e488207e41"/>
     <sys_element_mapping action="delete_multiple" query="id=7e435307e4b2907e43a607e488207e41"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -4422,6 +4474,7 @@
         <table>var__m_sys_hub_flow_input_a8c372cdebf9021041417bd6c1522856</table>
         <value>{{pd.inputRecord.sys_created_by}}</value>
     </sys_element_mapping>
+    <sys_pd_activity_action_override action="delete_multiple" query="activity=7e435307e4b2907e43a607e488207e41"/>
     <sys_pd_process_variant action="delete_multiple" query="process_definition=a9e73396e4f972c6f1a1d1567bf3f8c1"/>
     <sys_pd_derivative action="delete_multiple" query="derivative_parent=1ab44ff01ab47f501ab44dc01ab490f0"/>
     <sys_pd_derivative action="delete_multiple" query="derivative_parent=33dafe0033da384033da679033da3360"/>
@@ -4595,6 +4648,7 @@
         <active>true</active>
         <data>{"run_trigger":"org.mozilla.javascript.UniqueTag@4a2519ed: NOT_FOUND"}</data>
         <identifier>10ce64becc6ee92194cd3fc331e7ea72</identifier>
+        <identifier_type/>
         <runner>PDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-16 12:05:11</sys_created_on>
@@ -4637,14 +4691,28 @@
     <sys_pd_process_definition action="INSERT_OR_UPDATE">
         <access>public</access>
         <active>true</active>
+        <allow_as_nested>false</allow_as_nested>
+        <copied_from/>
+        <copied_from_label/>
+        <data_retention_period_override>6_week</data_retention_period_override>
         <description/>
         <designer_state>{"creatorStudioRecordProducerId":"fd6c599f97bc52103b4cb47de053af4f"}</designer_state>
         <engine_major_version/>
+        <evaluate_variant_children_after/>
+        <execution_type>record_driven</execution_type>
         <label>Restaurant booking</label>
+        <launcher_description/>
+        <launcher_inputs/>
+        <launcher_record_form_view/>
+        <launcher_show_record_form>false</launcher_show_record_form>
+        <launcher_template_fields/>
+        <launcher_title/>
         <name>restaurant_booking</name>
+        <now_assist_kb/>
         <now_assist_prompt/>
         <permission/>
         <process_type display_value="Creator Studio Automation">a487710eff0f3110893effffffffff4d</process_type>
+        <public_access>false</public_access>
         <restartable>RESTARTABLE_FALSE</restartable>
         <run_on_pad_engine>false</run_on_pad_engine>
         <run_strategy>run_once</run_strategy>
@@ -4669,5 +4737,5 @@
         <sys_updated_on>2025-11-17 12:48:48</sys_updated_on>
         <view_type>DIAGRAM</view_type>
     </sys_pd_process_definition>
-    <sys_translated_text action="delete_multiple" query="documentkey=a9e73396e4f972c6f1a1d1567bf3f8c1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a9e73396e4f972c6f1a1d1567bf3f8c1"/>
 </record_update>

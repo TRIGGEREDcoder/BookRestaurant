@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="no_attachment=true" audit="true" db_object_id="f3cf7c3293b626505b75b2ddfaba1038" extends="cmdb_ci" label="Eindeutiges Zertifikat" max_length="40" name="cmdb_ci_certificate" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="certificate_owner" max_length="32" name="u_certificate_owner" reference="sys_user" type="reference"/>
+    </element>
+</database>

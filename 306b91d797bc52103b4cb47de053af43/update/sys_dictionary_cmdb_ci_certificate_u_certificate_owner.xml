@@ -2,7 +2,7 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="u_certificate_owner" table="cmdb_ci_certificate">
         <active>true</active>
         <array>false</array>
-        <attributes>encode_utf8=false</attributes>
+        <attributes>edge_encryption_enabled=true,encode_utf8=false</attributes>
         <audit>false</audit>
         <calculation/>
         <choice>0</choice>
@@ -34,6 +34,7 @@
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference display_value="" name="sys_user">sys_user</reference>
         <reference_cascade_rule/>
@@ -47,7 +48,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-20 10:13:34</sys_created_on>
-        <sys_id>676f2f568300ba507c2356e0deaad383</sys_id>
         <sys_name>certificate_owner</sys_name>
         <sys_package display_value="Book Restaurant Table" source="x_1536901_book_r_0">306b91d797bc52103b4cb47de053af43</sys_package>
         <sys_policy/>
